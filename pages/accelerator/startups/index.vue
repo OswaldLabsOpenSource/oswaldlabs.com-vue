@@ -27,7 +27,7 @@
 										{{startup.data.team[1].data.name.split(" ")[0]}}
 									</span>
 									<span v-else-if="startup.data.team.length === 1">
-										{{startup.data.team[0].data.name.split(" ")[0]}}
+										{{startup.data.team[0].data.name}}
 									</span>
 									<span v-else>{{startup.data.team.length}} founders</span>
 								</div>
