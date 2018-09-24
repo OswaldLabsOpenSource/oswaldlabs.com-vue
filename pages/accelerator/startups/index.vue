@@ -77,4 +77,7 @@ main > header {
 	margin-right: 0.5rem;
 	border-radius: 100%;
 }
+.card {
+	margin-bottom: 2rem;
+}
 </style>
