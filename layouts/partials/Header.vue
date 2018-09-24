@@ -9,10 +9,10 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Platform</a>
+							<nuxt-link class="nav-link" to="/platform">Platform</nuxt-link>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Accelerator</a>
+							<nuxt-link class="nav-link" to="/accelerator">Accelerator</nuxt-link>
 						</li>
 						<li class="nav-item">
 							<nuxt-link class="nav-link" to="/about">Company</nuxt-link>
