@@ -1,6 +1,7 @@
 <template>
 	<main>
 		<header class="bg-light-1">
+			<smallnav type="accelerator" />
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
@@ -27,12 +28,13 @@
 <script>
 import content from "@/components/content";
 import cta from "@/components/cta.vue";
+import smallnav from "@/components/smallnav.vue";
 export default {
 	asyncData ({ params }) {
 		return content("accelerator/index");
 	},
 	components: {
-		cta
+		cta, smallnav
 	}
 }
 </script>
