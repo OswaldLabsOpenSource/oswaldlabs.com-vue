@@ -1,6 +1,105 @@
 <template>
-  <div>
-    <div>Navbar</div>
-    <nuxt/>
-  </div>
+	<div>
+		<header id="masthead">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="#">Oswald Labs</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Platform</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Accelerator</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Company</a>
+							</li>
+						</ul>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Get in touch &rarr;</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<nuxt />
+		<footer id="colophon">
+			<section class="bg-light pt-5 pb-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 d-flex justify-content-between flex-column text-center text-md-left">
+							<h2 class="h5">Oswald Labs</h2>
+							<div>&copy; 2018</div>
+						</div>
+						<div class="col-md-9">
+							<div class="row">
+								<div class="col-6 col-md">
+									<h2 class="h5">Platform</h2>
+									<nav class="nav flex-column">
+										<a href="#">Web accessibility</a>
+										<a href="#">Smartphone OS</a>
+										<a href="#">Browser extension</a>
+										<a href="#">Platform apps</a>
+										<a href="#">GDPR &amp; privacy</a>
+									</nav>
+								</div>
+								<div class="col-6 col-md">
+									<h2 class="h5">Accelerator</h2>
+									<nav class="nav flex-column">
+										<a href="#">Program home</a>
+										<a href="#">Portfolio startups</a>
+										<a href="#">Upcoming events</a>
+										<a href="#">Partnerships</a>
+									</nav>
+								</div>
+								<div class="col-6 col-md">
+									<h2 class="h5">Developers</h2>
+									<nav class="nav flex-column">
+										<a href="#">Documentation</a>
+										<a href="#">API reference</a>
+										<a href="#">Agastya apps</a>
+										<a href="#">&#9679; Status</a>
+									</nav>
+								</div>
+								<div class="col-6 col-md">
+									<h2 class="h5">Company</h2>
+									<nav class="nav flex-column">
+										<a href="#">About us</a>
+										<a href="#">Leadership</a>
+										<a href="#">Our values</a>
+										<a href="#">Work with us</a>
+										<a href="#">Blog</a>
+									</nav>
+								</div>
+								<div class="col-6 col-md">
+									<h2 class="h5">Resources</h2>
+									<nav class="nav flex-column">
+										<a href="#">Contact us</a>
+										<a href="#">Press</a>
+										<a href="#">Privacy &amp; terms</a>
+										<a href="#">GDPR Tools</a>
+										<a href="#">Payments</a>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="pt-4 pb-4">
+				<div class="container">
+					<div class="row">
+						<div class="col-md">Accessibility tools</div>
+						<div class="col-md text-right">Made in X</div>
+					</div>
+				</div>
+			</section>
+		</footer>
+	</div>
 </template>
