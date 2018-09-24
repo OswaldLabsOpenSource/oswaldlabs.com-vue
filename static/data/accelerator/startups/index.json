@@ -1,0 +1,7 @@
+{
+	"header": {
+		"title": "Portfolio startups",
+		"intro": "Oswald Labs Accelerator works with startups solving problems, from healthcare to artificial intelligence to mobile apps, and helps them grow quickly. Our current public portfolio includes:"
+	},
+	"startups": ["ara", "timebound", "brandie"]
+}
