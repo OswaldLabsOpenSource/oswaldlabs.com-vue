@@ -106,7 +106,6 @@ main > header {
 	height: 1.5rem;
 	vertical-align: top;
 	margin-right: 0.5rem;
-	border-radius: 100%;
 }
 .card {
 	margin-bottom: 2rem;

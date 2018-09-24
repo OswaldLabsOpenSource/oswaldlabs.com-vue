@@ -62,7 +62,7 @@ export default {
 .navigation {
 	background-color: #e9edf1;
 	margin-top: -2.5rem;
-	margin-bottom: 5rem;
+	margin-bottom: 4rem;
 	a.nav-link {
 		color: #32325d;
 		padding: 1rem;
