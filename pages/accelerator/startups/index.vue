@@ -19,8 +19,20 @@
 								<span>{{startup.data.title}}</span>
 							</h5>
 							<p class="card-text">{{startup.data.subtitle}}</p>
-							<div class="mb-3 text-muted"><i class="fas fa-map-marker mr-2"></i>{{startup.data.city}}, {{startup.data.country}}</div>
-							<a href="#" class="card-link">Visit {{startup.data.title}} &rarr;</a>
+							<div class="team">
+								{{startup.data.team}}
+								<div>
+									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
+									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
+									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
+									<span>Anand &amp; Florian</span>
+								</div>
+							</div>
+							<div class="text-muted"><i class="fas fa-map-marker mr-2"></i>{{startup.data.city}}, {{startup.data.country}}</div>
+							<div class="mt-3">
+								<a href="#" class="card-link">Learn more &rarr;</a>
+								<a v-if="startup.data.url" :href="startup.data.url" class="card-link">Visit {{startup.data.domain}} &rarr;</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -40,6 +52,7 @@ export default {
 			axios.get(`http://localhost:3000/data/accelerator/startups/index.json`)
 			.then(res => {
 				const promises = [];
+				const promises2 = [];
 				for (let i = 0; i < res.data.startups.length; i++) {
 					promises.push(new Promise((resolvePromise, rejectPromise) => {
 						axios.get(`http://localhost:3000/data/accelerator/startups/${res.data.startups[i]}.json`).then(profile => {
@@ -47,13 +60,27 @@ export default {
 								slug: res.data.startups[i],
 								data: profile.data
 							};
+							for (let j = 0; j < profile.data.team.length; j++) {
+								promises2.push(new Promise((resolvePromise2, rejectPromise2) => {
+									axios.get(`http://localhost:3000/data/profiles/${profile.data.team[j]}.json`).then(user => {
+										res.data.startups[i].data.team[j] = {
+											slug: res.data.startups[i].data.team[j],
+											data: user.data
+										};
+										resolvePromise2();
+									});
+								}));
+							}
 							resolvePromise();
 						});
 					}));
 				}
 				Promise.all(promises)
 					.then(() => {
-						resolve({ data: res.data })
+						Promise.all(promises2)
+							.then(() => {
+								resolve({ data: res.data })
+							})
 					})
 			})
 		})
@@ -79,5 +106,19 @@ main > header {
 }
 .card {
 	margin-bottom: 2rem;
+}
+.team {
+	margin-bottom: 1rem;
+}
+.team img {
+	height: 2.25rem;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 0.5rem;
+	border-radius: 100%;
+	border: 3px solid white;
+	+ img {
+		margin-left: -1.5rem;
+	}
 }
 </style>
