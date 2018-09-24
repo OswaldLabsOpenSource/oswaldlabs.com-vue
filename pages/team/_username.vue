@@ -1,16 +1,16 @@
 <template>
 	<section class="container">
-		TEAM Single {{users}}
+		TEAM Single {{user.name}}
 	</section>
 </template>
 
 <script>
-import axios from "axios";
+import axios from "axios"
 export default {
 	asyncData ({ params }) {
-		return axios.get(`https://reqres.in/api/users?page=2`)
+		return axios.get(`http://localhost:3000/data/team/anand.json`)
 		.then(res => {
-			return { users: res.data }
+			return { user: res.data }
 		})
 	}
 }
