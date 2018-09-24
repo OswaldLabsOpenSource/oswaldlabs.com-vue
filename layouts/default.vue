@@ -43,7 +43,7 @@ body {
 	opacity: 0;
 }
 main > header {
-	padding: 7.5rem 0 5rem 0;
+	padding: 7.5rem 0 2rem 0;
 }
 main > section {
 	padding: 5rem 0;
