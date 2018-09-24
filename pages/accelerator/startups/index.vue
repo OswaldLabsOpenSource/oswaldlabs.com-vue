@@ -12,7 +12,7 @@
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-md-4" v-for="(startup, index) in data.startups" :key="index">
+					<div class="col-md-4" v-for="(startup, index) in data.startups" :key="`startup_${index}`">
 						<div class="card card-body">
 							<h5 class="card-title">
 								<img alt="" :src="`https://www.google.com/s2/favicons?domain=${startup.data.domain}`">
@@ -20,12 +20,16 @@
 							</h5>
 							<p class="card-text">{{startup.data.subtitle}}</p>
 							<div class="team">
-								{{startup.data.team}}
 								<div>
-									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
-									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
-									<img alt="" src="https://randomuser.me/api/portraits/men/31.jpg">
-									<span>Anand &amp; Florian</span>
+									<img v-for="(profile, index) in startup.data.team" :key="`profile_${index}`" alt="" :src="profile.data.image">
+									<span v-if="startup.data.team.length === 2">
+										{{startup.data.team[0].data.name.split(" ")[0]}} &amp;
+										{{startup.data.team[1].data.name.split(" ")[0]}}
+									</span>
+									<span v-else-if="startup.data.team.length === 1">
+										{{startup.data.team[0].data.name.split(" ")[0]}}
+									</span>
+									<span v-else>{{startup.data.team.length}} founders</span>
 								</div>
 							</div>
 							<div class="text-muted"><i class="fas fa-map-marker mr-2"></i>{{startup.data.city}}, {{startup.data.country}}</div>
