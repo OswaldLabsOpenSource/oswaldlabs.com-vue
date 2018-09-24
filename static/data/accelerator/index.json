@@ -1,0 +1,22 @@
+{
+	"header": {
+		"title": "Everything a startup needs,<br>for 0% equity.",
+		"intro": "Oswald Labs Accelerator is a free, remote, global support program for early-stage startups building for the next billion users. The program is based out of Enschede, the Netherlands, but is open to startups worldwide.",
+		"buttons": [
+			{
+				"text": "Apply now &rarr;",
+				"href": "https://www.f6s.com/oswaldlabsaccelerator2018"
+			}
+		]
+	},
+	"features": {
+		"title": "How it works",
+		"intro": "We've partnered with the most innovative companies across the globe to bring you the best advice, mentorship, services, resources, and investments — all for free.\n\nWe select up to 8 startups every batch, and help them accelerate their growth for six months.",
+		"buttons": [
+			{
+				"text": "Start building &rarr;",
+				"href": "/platform"
+			}
+		]
+	}
+}

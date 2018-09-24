@@ -3,21 +3,20 @@
 		<header class="bg-light-1">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8">
-						<h1>{{data.header.title}}</h1>
+					<div class="col-md-6">
+						<h1 v-html="data.header.title" />
 						<p style="max-width: 500px" class="mt-4 mb-4">{{data.header.intro}}</p>
 						<cta :context="data.header" />
 					</div>
 				</div>
 			</div>
 		</header>
-		<section class="border-top">
+		<section>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<h2>{{data.new.title}}</h2>
-						<p style="max-width: 500px" class="mt-4 mb-4">{{data.new.intro}}</p>
-						<cta :context="data.new" />
+						<h2>{{data.features.title}}</h2>
+						<div style="max-width: 500px" class="mt-4 mb-4" v-html="data.features.intro" />
 					</div>
 				</div>
 			</div>
@@ -26,14 +25,11 @@
 </template>
 
 <script>
-import axios from "axios";
-import cta from "../components/cta.vue";
+import content from "@/components/content";
+import cta from "@/components/cta.vue";
 export default {
 	asyncData ({ params }) {
-		return axios.get(`http://localhost:3000/data/index.json`)
-		.then(res => {
-			return { data: res.data }
-		})
+		return content("accelerator/index");
 	},
 	components: {
 		cta
