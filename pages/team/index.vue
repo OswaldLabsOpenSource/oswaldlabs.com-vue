@@ -1,17 +1,10 @@
 <template>
-	<section class="container">
-		TEAM Single {{users}}
-	</section>
+	<main>
+		<section class="container">
+			<h1>Team</h1>
+			<ul>
+				<li><nuxt-link to="/team/anand">Anand</nuxt-link></li>
+			</ul>
+		</section>
+	</main>
 </template>
-
-<script>
-import axios from "axios"
-export default {
-	asyncData ({ params }) {
-		return axios.get(`https://reqres.in/api/users?page=2`)
-		.then(res => {
-			return { users: res.data }
-		})
-	}
-}
-</script>
