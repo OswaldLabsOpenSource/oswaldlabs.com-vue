@@ -1,0 +1,26 @@
+{
+	"header": {
+		"title": "Technology for the next billion users.",
+		"intro": "Oswald Labs is an award-winning accessibility technology company. With our research-driven and inclusive product portfolio, we’ve impacted thousands of lives throughout the globe.",
+		"buttons": [
+			{
+				"text": "Learn more",
+				"href": "/about"
+			},
+			{
+				"text": "Get in touch",
+				"href": "/contact"
+			}
+		]
+	},
+	"new": {
+		"title": "Platform",
+		"intro": "Oswald Labs Platform is a set of free and open APIs to build scalable, accessible applications. Get started with cross-platform SDKs featuring flexible APIs and exclusive tools.",
+		"buttons": [
+			{
+				"text": "Start building &rarr;",
+				"href": "/platform"
+			}
+		]
+	}
+}
