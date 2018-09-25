@@ -4,10 +4,15 @@
 			<smallnav type="accelerator" />
 			<div class="container">
 				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<div>
+							<h1 v-html="data.header.title" />
+							<p style="max-width: 500px" class="mt-4 mb-4">{{data.header.intro}}</p>
+							<cta :context="data.header" />
+						</div>
+					</div>
 					<div class="col-md-6">
-						<h1 v-html="data.header.title" />
-						<p style="max-width: 500px" class="mt-4 mb-4">{{data.header.intro}}</p>
-						<cta :context="data.header" />
+						<img alt="" src="https://undraw.oswaldlabs.com/007bff/wireframing.svg">
 					</div>
 				</div>
 			</div>

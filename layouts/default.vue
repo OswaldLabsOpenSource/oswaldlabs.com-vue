@@ -43,4 +43,7 @@ main > header {
 main > section {
 	padding: 4rem 0;
 }
+img {
+	max-width: 100%;
+}
 </style>
