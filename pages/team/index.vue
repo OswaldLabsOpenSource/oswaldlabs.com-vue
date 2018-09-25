@@ -26,28 +26,32 @@
 <script>
 import axios from "axios";
 export default {
-	asyncData ({ params }) {
+	asyncData({ params }) {
 		return new Promise((resolve, reject) => {
-			axios.get(`http://localhost:3000/data/team.json`)
-			.then(res => {
+			axios.get(`http://localhost:3000/data/team.json`).then(res => {
 				const promises = [];
 				for (let i = 0; i < res.data.people.length; i++) {
-					promises.push(new Promise((resolvePromise, rejectPromise) => {
-						axios.get(`http://localhost:3000/data/profiles/${res.data.people[i]}.json`).then(profile => {
-							res.data.people[i] = {
-								slug: res.data.people[i],
-								data: profile.data
-							};
-							resolvePromise();
-						});
-					}));
+					promises.push(
+						new Promise((resolvePromise, rejectPromise) => {
+							axios
+								.get(
+									`http://localhost:3000/data/profiles/${res.data.people[i]}.json`
+								)
+								.then(profile => {
+									res.data.people[i] = {
+										slug: res.data.people[i],
+										data: profile.data
+									};
+									resolvePromise();
+								});
+						})
+					);
 				}
-				Promise.all(promises)
-					.then(() => {
-						resolve({ data: res.data })
-					})
-			})
-		})
+				Promise.all(promises).then(() => {
+					resolve({ data: res.data });
+				});
+			});
+		});
 	}
-}
+};
 </script>

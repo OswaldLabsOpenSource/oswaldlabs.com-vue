@@ -20,7 +20,7 @@ export default {
 	data: () => {
 		return {
 			data: {}
-		}
+		};
 	},
 	props: ["type"],
 	created() {
@@ -50,11 +50,11 @@ export default {
 							href: "/accelerator/spaces"
 						}
 					]
-				}
+				};
 				break;
 		}
 	}
-}
+};
 </script>
 
 

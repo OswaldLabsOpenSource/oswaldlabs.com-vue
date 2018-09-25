@@ -30,13 +30,14 @@ import content from "@/components/content";
 import cta from "@/components/cta.vue";
 import smallnav from "@/components/smallnav.vue";
 export default {
-	asyncData ({ params }) {
+	asyncData({ params }) {
 		return content("accelerator/index");
 	},
 	components: {
-		cta, smallnav
+		cta,
+		smallnav
 	}
-}
+};
 </script>
 
 <style lang="scss" scoped>

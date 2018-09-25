@@ -29,16 +29,15 @@
 import axios from "axios";
 import cta from "../components/cta.vue";
 export default {
-	asyncData ({ params }) {
-		return axios.get(`http://localhost:3000/data/index.json`)
-		.then(res => {
-			return { data: res.data }
-		})
+	asyncData({ params }) {
+		return axios.get(`http://localhost:3000/data/index.json`).then(res => {
+			return { data: res.data };
+		});
 	},
 	components: {
 		cta
 	}
-}
+};
 </script>
 
 <style lang="scss" scoped>

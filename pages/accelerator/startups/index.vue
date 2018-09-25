@@ -51,48 +51,62 @@ import content from "@/components/content";
 import cta from "@/components/cta.vue";
 import smallnav from "@/components/smallnav.vue";
 export default {
-	asyncData ({ params }) {
+	asyncData({ params }) {
 		return new Promise((resolve, reject) => {
-			axios.get(`http://localhost:3000/data/accelerator/startups/index.json`)
-			.then(res => {
+			axios.get(`http://localhost:3000/data/accelerator/startups/index.json`).then(res => {
 				const promises = [];
 				const promises2 = [];
 				for (let i = 0; i < res.data.startups.length; i++) {
-					promises.push(new Promise((resolvePromise, rejectPromise) => {
-						axios.get(`http://localhost:3000/data/accelerator/startups/${res.data.startups[i]}.json`).then(profile => {
-							res.data.startups[i] = {
-								slug: res.data.startups[i],
-								data: profile.data
-							};
-							for (let j = 0; j < profile.data.team.length; j++) {
-								promises2.push(new Promise((resolvePromise2, rejectPromise2) => {
-									axios.get(`http://localhost:3000/data/profiles/${profile.data.team[j]}.json`).then(user => {
-										res.data.startups[i].data.team[j] = {
-											slug: res.data.startups[i].data.team[j],
-											data: user.data
-										};
-										resolvePromise2();
-									});
-								}));
-							}
-							resolvePromise();
-						});
-					}));
+					promises.push(
+						new Promise((resolvePromise, rejectPromise) => {
+							axios
+								.get(
+									`http://localhost:3000/data/accelerator/startups/${
+										res.data.startups[i]
+									}.json`
+								)
+								.then(profile => {
+									res.data.startups[i] = {
+										slug: res.data.startups[i],
+										data: profile.data
+									};
+									for (let j = 0; j < profile.data.team.length; j++) {
+										promises2.push(
+											new Promise((resolvePromise2, rejectPromise2) => {
+												axios
+													.get(
+														`http://localhost:3000/data/profiles/${
+															profile.data.team[j]
+														}.json`
+													)
+													.then(user => {
+														res.data.startups[i].data.team[j] = {
+															slug: res.data.startups[i].data.team[j],
+															data: user.data
+														};
+														resolvePromise2();
+													});
+											})
+										);
+									}
+									resolvePromise();
+								});
+						})
+					);
 				}
-				Promise.all(promises)
-					.then(() => {
-						Promise.all(promises2)
-							.then(() => {
-								resolve({ data: res.data })
-							})
-					})
-			})
-		})
+				Promise.all(promises).then(() => {
+					Promise.all(promises2).then(() => {
+						resolve({ data: res.data });
+					});
+				});
+			});
+		});
 	},
 	components: {
-		cta, smallnav
+		cta,
+		smallnav
 	}
-}
+};
 </script>
 
 <style lang="scss" scoped>

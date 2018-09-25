@@ -38,7 +38,8 @@
 <style lang="scss" scoped>
 header {
 	position: absolute;
-	left: 0; right: 0;
+	left: 0;
+	right: 0;
 	top: 0;
 	padding: 0.75rem 0;
 	.nav-link {

@@ -6,12 +6,11 @@ const md = new markdown({
 });
 
 export default file => {
-	return axios.get(`http://localhost:3000/data/${file}.json`)
-		.then(res => {
-			scan(res.data);
-			return { data: res.data }
-		})
-}
+	return axios.get(`http://localhost:3000/data/${file}.json`).then(res => {
+		scan(res.data);
+		return { data: res.data };
+	});
+};
 
 const scan = (obj, parent, index) => {
 	var k;
@@ -25,6 +24,5 @@ const scan = (obj, parent, index) => {
 		} else {
 			parent[index] = md.renderInline(parent[index]);
 		}
-	};
-
+	}
 };
