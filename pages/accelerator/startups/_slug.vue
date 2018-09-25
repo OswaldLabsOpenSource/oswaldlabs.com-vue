@@ -4,38 +4,25 @@
 			<smallnav class="mb-0" type="accelerator" />
 		</header>
 		<section>
-			<div class="container">
+			<div class="container" v-for="(startup, index) in data.startups" :key="`startup_${index}`" v-if="startup.slug === $route.params.slug">
 				<div class="row">
-					<div class="col-md-8">
-						<h2>{{data.header.title}}</h2>
-						<div style="max-width: 500px" class="mt-4 mb-4" v-html="data.header.intro" />
+					<div class="col-md-5">
+						<h2>{{startup.data.title}}</h2>
+						<h3 class="subheading mt-4 mb-4" v-html="startup.data.subtitle" />
+						<div class="team" v-for="(user, index) in startup.data.team" :key="index">
+							<img class="avatar" alt="" :src="user.data.image">
+							{{user.data.name}}
+						</div>
+						<p class="mt-5" v-html="startup.data.intro" />
+						<div v-if="startup.data.url">
+							<a :href="startup.data.url" class="btn btn-primary">Visit {{startup.data.domain}} &rarr;</a>
+						</div>
 					</div>
-				</div>
-				<div class="row mt-5">
-					<div class="col-md-4" v-for="(startup, index) in data.startups" :key="`startup_${index}`">
-						<div class="card card-body">
-							<h5 class="card-title">
-								<img alt="" :src="`https://www.google.com/s2/favicons?domain=${startup.data.domain}`">
-								<span>{{startup.data.title}}</span>
-							</h5>
-							<p class="card-text">{{startup.data.subtitle}}</p>
-							<div class="team">
-								<div>
-									<img v-for="(profile, index) in startup.data.team" :key="`profile_${index}`" alt="" :src="profile.data.image">
-									<span v-if="startup.data.team.length === 2">
-										{{startup.data.team[0].data.name.split(" ")[0]}} &amp;
-										{{startup.data.team[1].data.name.split(" ")[0]}}
-									</span>
-									<span v-else-if="startup.data.team.length === 1">
-										{{startup.data.team[0].data.name}}
-									</span>
-									<span v-else>{{startup.data.team.length}} founders</span>
-								</div>
-							</div>
-							<div class="text-muted"><i class="fas fa-map-marker mr-2"></i>{{startup.data.city}}, {{startup.data.country}}</div>
-							<div class="mt-3">
-								<nuxt-link :to="`/accelerator/startups/${startup.slug}`" class="card-link">Learn more &rarr;</nuxt-link>
-								<a v-if="startup.data.url" :href="startup.data.url" class="card-link">Visit {{startup.data.domain}} &rarr;</a>
+					<div class="col-md-7" v-if="startup.data.screenshot">
+						<div class="card">
+							<img alt="" :src="startup.data.screenshot" class="card-img-top">
+							<div class="card-body">
+								<p class="mb-0 small">{{startup.data.caption}}</p>
 							</div>
 						</div>
 					</div>

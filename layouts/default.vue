@@ -68,4 +68,7 @@ main > section {
 img {
 	max-width: 100%;
 }
+::selection {
+	background-color: #e9edf1;
+}
 </style>

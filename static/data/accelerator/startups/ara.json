@@ -5,5 +5,8 @@
 	"subtitle": "AI-powered business communication assistant over email",
 	"domain": "araassistant.com",
 	"url": "https://araassistant.com/",
-	"team": ["anand", "florian"]
+	"team": ["anand", "florian"],
+	"screenshot": "https://static.oswaldlabs.com/Screen Shot 2018-09-25 at 5.47.47 PM.png",
+	"caption": "Screenshot of araassistant.com in September 2018",
+	"intro": "Ara is your AI-powered business communication assistant who schedules meetings, sets reminders, sends follow-ups, records minutes, and more."
 }
