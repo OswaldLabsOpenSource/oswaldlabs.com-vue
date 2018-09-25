@@ -12,10 +12,36 @@
 	"features": {
 		"title": "How it works",
 		"intro": "We've partnered with the most innovative companies across the globe to bring you the best advice, mentorship, services, resources, and investments — all for free.\n\nWe select up to 8 startups every batch, and help them accelerate their growth for six months.",
-		"buttons": [
+		"list": [
 			{
-				"text": "Start building &rarr;",
-				"href": "/platform"
+				"icon": "briefcase",
+				"title": "Legal support",
+				"intro": "Hiring professional lawyers is expensive. So you don't have to. Get free legal consultations for your startup, patent and IP support, and one-on-one meetings."
+			},
+			{
+				"icon": "building",
+				"title": "Office space",
+				"intro": "Get a rented office space or access to coworking spaces in your city for free. Build your team, work unlimited hours, and have a legal office address."
+			},
+			{
+				"icon": "user",
+				"title": "Business development",
+				"intro": "One-on-one meetings for strategy and scalability with business development experts from around the world. Up to two hours per week."
+			},
+			{
+				"icon": "laptop",
+				"title": "Technology support",
+				"intro": "Free consultations and pro-bono development from some of the leading digital studios to help improve your technology stack and user experience."
+			},
+			{
+				"icon": "list",
+				"title": "Research & testing",
+				"intro": "Work with universities, NGOs, and professional user experience and testing organizations to get feedback and R&D support before you launch."
+			},
+			{
+				"icon": "plus",
+				"title": "And more",
+				"intro": "Free email hosting on your custom domain. Free marketing consultations. Licenses to enterprise software. There’s more from where these are from."
 			}
 		]
 	}

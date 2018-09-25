@@ -21,8 +21,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">
-						<h2>{{data.features.title}}</h2>
+						<h2 v-html="data.features.title" />
 						<div style="max-width: 500px" class="mt-4 mb-4" v-html="data.features.intro" />
+					</div>
+				</div>
+				<div class="row mt-5">
+					<div v-for="(feature, index) in data.features.list" :key="`list_${index}`" class="col-md-4 mb-4">
+						<div class="h2 text-muted"><i :class="`fas fa-${feature.icon}`"></i></div>
+						<h2 class="subheading" v-html="feature.title" />
+						<p v-html="feature.intro" />
 					</div>
 				</div>
 			</div>
