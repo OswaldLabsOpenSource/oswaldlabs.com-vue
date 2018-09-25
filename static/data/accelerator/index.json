@@ -44,5 +44,42 @@
 				"intro": "Free email hosting on your custom domain. Free marketing consultations. Licenses to enterprise software. There’s more from where these are from."
 			}
 		]
+	},
+	"deals": {
+		"title": "Deals & perks",
+		"intro": "Our accelerator companies get access to exclusive perks, deals, and offers from our partners.",
+		"list": [
+			{
+				"title": "$5000 Agastya Credits",
+				"intro": "Get $5,000 in credits to use on the Oswald Labs Platform and Agastya."
+			},{
+				"title": "$5000 AWS Credits",
+				"intro": "Host your cloud infrastructure on Amazon Web Services and get $5,000 in credits."
+			},
+			{
+				"title": "$5000 AWS Business Support",
+				"intro": "24x7 technical support via email/chat/phone and more for 1 year."
+			},
+			{
+				"title": "$600 Business Essentials",
+				"intro": "Credits for online training to develop cloud adoption for your businesses."
+			},
+			{
+				"title": "$600 Technical Essentials",
+				"intro": "Credits for hands-on labs and online training on building an AWS stack."
+			},
+			{
+				"title": "$80 AWS Self-paced Labs",
+				"intro": "Step-by-step instructions to try with technology in a practice environment."
+			},
+			{
+				"title": "100% Free Unloq 2FA",
+				"intro": "Completely free two-factor authentication as a service from Unloq."
+			},
+			{
+				"title": "50% off on merch",
+				"intro": "Half-off on customized logo apparel and products for your startup."
+			}
+		]
 	}
 }

@@ -34,6 +34,22 @@
 				</div>
 			</div>
 		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h2 v-html="data.deals.title" />
+						<p style="max-width: 500px" class="mt-4 mb-4" v-html="data.deals.intro" />
+					</div>
+				</div>
+				<div class="row mt-4">
+					<div v-for="(deal, index) in data.deals.list" :key="`list_${index}`" class="col-md-4 mb-4">
+						<h2 class="subheading" v-html="deal.title" />
+						<p v-html="deal.intro" />
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 </template>
 

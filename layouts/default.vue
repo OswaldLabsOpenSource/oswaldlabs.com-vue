@@ -61,6 +61,9 @@ main > header {
 }
 main > section {
 	padding: 4rem 0;
+	& + section:not(.bg-light-1) {
+		border-top: 10px solid #eee;
+	}
 }
 img {
 	max-width: 100%;
