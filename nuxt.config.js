@@ -3,6 +3,12 @@ const pkg = require("./package");
 module.exports = {
 	mode: "universal",
 
+	router: {
+		scrollBehavior: (to, from, savedPosition) => {
+			return { x: 0, y: 0 };
+		}
+	},
+
 	/*
   ** Headers of the page
   */

@@ -52,6 +52,33 @@ export default {
 					]
 				};
 				break;
+			case "platform":
+				this.data = {
+					title: "Oswald Labs Platform",
+					items: [
+						{
+							title: "Agastya",
+							href: "/platform/agastya"
+						},
+						{
+							title: "Shravan",
+							href: "/platform/shravan"
+						},
+						{
+							title: "Valmiki",
+							href: "/platform/valmiki"
+						},
+						{
+							title: "Developers",
+							href: "/platform/developers"
+						},
+						{
+							title: "APIs",
+							href: "/platform/api"
+						}
+					]
+				};
+				break;
 		}
 	}
 };

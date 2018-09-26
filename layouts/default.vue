@@ -61,8 +61,9 @@ main > header {
 }
 main > section {
 	padding: 4rem 0;
+	position: relative;
 	& + section:not(.bg-light-1) {
-		border-top: 10px solid #eee;
+		border-top: 2px solid #eee;
 	}
 }
 img {
