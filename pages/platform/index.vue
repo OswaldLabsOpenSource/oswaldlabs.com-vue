@@ -67,7 +67,7 @@
 						<cta :context="data.features" />
 					</div>
 				</div>
-				<div class="row mt-5">
+				<div class="row mt-5 pt-4">
 					<div v-for="(feature, index) in data.features.list" :key="`list_${index}`" class="col-md-4 mb-4">
 						<div class="h2 text-muted"><i :class="`fas fa-${feature.icon}`"></i></div>
 						<h2 class="subheading" v-html="feature.title" />

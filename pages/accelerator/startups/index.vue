@@ -14,7 +14,7 @@
 				<div class="row mt-5">
 					<div class="col-md-4" v-for="(startup, index) in data.startups" :key="`startup_${index}`">
 						<div class="card card-body">
-							<h5 class="card-title">
+							<h5 class="card-title subheading">
 								<img alt="" :src="`https://www.google.com/s2/favicons?domain=${startup.data.domain}`">
 								<span>{{startup.data.title}}</span>
 							</h5>
@@ -117,7 +117,7 @@ main > header {
 	margin-bottom: 1rem;
 }
 .card-title img {
-	height: 1.5rem;
+	height: 1.25rem;
 	vertical-align: top;
 	margin-right: 0.5rem;
 }

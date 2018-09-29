@@ -13,6 +13,9 @@ module.exports = {
   ** Headers of the page
   */
 	head: {
+		htmlAttrs: {
+			lang: "en"
+		},
 		title: "Oswald Labs",
 		meta: [
 			{ charset: "utf-8" },

@@ -1,0 +1,38 @@
+{
+	"header": {
+		"title": "Smartphone for the rest of us.",
+		"intro": "Introducing Shravan, the world’s first end-to-end accessible smartphone OS. With our patent-pending speech and vibration technology, Shravan can be easily used by the visually impaired, the unlettered, senior citizens, and everyone in between.",
+		"second": "Shravan is Oswald Labs' research project, which takes its form both as an operating system for Android-based smartphones, and a set of inclusive, easy-to-use apps.",
+		"buttons": [
+			{
+				"text": "Preregister &rarr;",
+				"href": "/platform/agastya"
+			}
+		]
+	},
+	"features": {
+		"intro": "Oswald Labs Platform is an extensive suite of products, open-source projects, and developer APIs and SDKs to build tools to empower the next billion users.",
+		"products": [
+			{
+				"img": "https://oswaldlabs.com/images/shravan-image-1-9ab367f8.png",
+				"title": "Breaking barriers to smartphone usage",
+				"intro": "It works for people who have visual impairment, learning disorders, or are senior citizens. It also works for villagers, illiterate audiences, disabled users, and everyone in between."
+			},
+			{
+				"img": "https://oswaldlabs.com/images/shravan-image-2-71e4214d.png",
+				"title": "Revolutionary technology",
+				"intro": "It uses accessible interface patterns with different modes for correcting system-wide contrast and design settings using a patent-pending combination of vibrations, speech, and touch."
+			},
+			{
+				"img": "https://oswaldlabs.com/images/shravan-image-3-6969a5c3.png",
+				"title": "Made to empower every one of us",
+				"intro": "It has Aadhar integration and works in native languages like Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjab, Assamese, and Maithili."
+			},
+			{
+				"img": "https://oswaldlabs.com/images/shravan-image-4-59a9b548.png",
+				"title": "Tons of features and updates",
+				"intro": "It has a built-in voice assistant, internet applications like live news and sports scores, music streaming, and search, and emergency features like one-tap ambulance access."
+			}
+		]
+	}
+}

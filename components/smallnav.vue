@@ -3,7 +3,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 d-flex align-items-center">
-					<h1 class="m-0 font-weight-bold p-2 pl-3 p-md-0">{{data.title}}</h1>
+					<img v-if="data.icon" alt="" :src="data.icon">
+					<h1 class="m-0 font-weight-bold p-2 pl-3 p-md-0" :style="`color: ${data.color}`">{{data.title}}</h1>
 				</div>
 				<div class="col-md">
 					<nav class="nav justify-content-end">
@@ -79,6 +80,35 @@ export default {
 					]
 				};
 				break;
+			case "shravan":
+				this.data = {
+					icon: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Shravan.svg",
+					title: "Shravan",
+					color: "#fc3c53",
+					items: [
+						{
+							title: "Overview",
+							href: "/platform/shravan"
+						},
+						{
+							title: "Operating System",
+							href: "/platform/shravan/os"
+						},
+						{
+							title: "Augmenta11y",
+							href: "/platform/shravan/augmenta11y"
+						},
+						{
+							title: "Live Subtitles",
+							href: "/platform/shravan/live-subtitles"
+						},
+						{
+							title: "Visib11y",
+							href: "/platform/shravan/visib11y"
+						}
+					]
+				};
+				break;
 		}
 	}
 };
@@ -90,6 +120,16 @@ export default {
 	background-color: #e9edf1;
 	margin-top: -2.5rem;
 	margin-bottom: 4rem;
+	img {
+		height: 2rem;
+		vertical-align: middle;
+		margin-right: 0.75rem;
+		margin-top: -0.1rem;
+		float: left;
+	}
+	+ .navigation {
+		margin-top: -4rem;
+	}
 	a.nav-link {
 		color: #32325d;
 		padding: 1rem;
@@ -98,8 +138,20 @@ export default {
 		}
 	}
 	h1 {
-		color: #6b7c93;
+		color: #414d5b;
 		font-size: inherit;
+	}
+	&.shravan {
+		background-color: #fff;
+		// h1 {
+		// 	color: #fff;
+		// }
+		// a.nav-link {
+		// 	color: rgba(255, 255, 255, 0.85);
+		// 	&.nuxt-link-exact-active {
+		// 		color: #fff;
+		// 	}
+		// }
 	}
 }
 </style>
