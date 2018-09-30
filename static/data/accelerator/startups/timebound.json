@@ -5,6 +5,7 @@
 	"subtitle": "Work tracking, timers, and reminders app for smartphones",
 	"domain": "timebound.org",
 	"url": "https://timebound.org/",
+	"icon": "https://res.cloudinary.com/anand-chowdhary/image/upload/v1538240820/oswald-labs/accelerator/timebound.png",
 	"team": ["ananay"],
 	"screenshot": "https://static.oswaldlabs.com/Screen Shot 2018-09-25 at 5.47.41 PM.png",
 	"caption": "Screenshot of timebound.org in September 2018"

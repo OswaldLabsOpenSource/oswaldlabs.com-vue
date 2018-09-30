@@ -72,4 +72,7 @@ img {
 ::selection {
 	background-color: #e9edf1;
 }
+:focus:not(:focus-visible) {
+	// outline: none;
+}
 </style>

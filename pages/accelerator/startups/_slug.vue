@@ -7,7 +7,10 @@
 			<div class="container" v-for="(startup, index) in data.startups" :key="`startup_${index}`" v-if="startup.slug === $route.params.slug">
 				<div class="row">
 					<div class="col-md-5">
-						<h2>{{startup.data.title}}</h2>
+						<h2>
+							<img alt="" :src="startup.data.icon || 'https://oswaldlabs.com/icons/android-chrome-192x192-3a35daa0.png'">
+							{{startup.data.title}}
+						</h2>
 						<h3 class="subheading mt-4 mb-4" v-html="startup.data.subtitle" />
 						<div class="team" v-for="(user, index) in startup.data.team" :key="index">
 							<img class="avatar" alt="" :src="user.data.image">
@@ -100,16 +103,12 @@ export default {
 main > header {
 	padding-bottom: 5rem;
 }
-.card-title {
-	margin-bottom: 1rem;
-}
-.card-title img {
-	height: 1.5rem;
-	vertical-align: top;
+h2 img {
+	height: 3rem;
+	border-radius: 100%;
+	vertical-align: middle;
+	margin-top: -0.1rem;
 	margin-right: 0.5rem;
-}
-.card {
-	margin-bottom: 2rem;
 }
 .team {
 	margin-bottom: 1rem;

@@ -5,6 +5,7 @@
 	"subtitle": "AI-powered business communication assistant over email",
 	"domain": "araassistant.com",
 	"url": "https://araassistant.com/",
+	"icon": "https://res.cloudinary.com/anand-chowdhary/image/upload/v1538240820/oswald-labs/accelerator/ara.png",
 	"team": ["anand", "florian"],
 	"screenshot": "https://static.oswaldlabs.com/Screen Shot 2018-09-25 at 5.47.47 PM.png",
 	"caption": "Screenshot of araassistant.com in September 2018",
