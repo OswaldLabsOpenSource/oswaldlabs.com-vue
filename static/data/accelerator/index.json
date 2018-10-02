@@ -81,5 +81,35 @@
 				"intro": "Half-off on customized logo apparel and products for your startup."
 			}
 		]
+	},
+	"special": {
+		"list": [
+			{
+				"title": "Technical Founder?",
+				"intro": "Build your product on top of Oswald Labs Platform for scalability, security, and SDKs based on years of research and development. Oswald Labs Accelerator startups get $5,000 in credits to spend on select Oswald Labs Platform products. Sign up for an API key from your startup email to get started.",
+				"buttons": [
+					{
+						"text": "Visit Oswald Labs Platform &rarr;",
+						"href": "/platform"
+					}
+				]
+			},
+			{
+				"title": "Fast track",
+				"intro": "Startups graduating from our partner programs, sponsored events, and approved accelerators get a fast track option to join Oswald Labs Accelerator. They can skip the application and interviews as long as they have a registered company and work at least 16 hours/week on the startup (each co-founder.)",
+				"buttons": [
+					{
+						"text": "Apple for fast track &rarr;",
+						"href": "/contact"
+					}
+				]
+			}
+		]
+	},
+	"cta": {
+		"title": "Free as in freedom",
+		"intro": "Oswald Labs Accelerator is a way for corporates and our partners to give back to the startup ecosystem. It's completely free for selected startups, no-questions-asked.",
+		"link": "Apply to Oswald Labs Accelerator &rarr;",
+		"href": "https://www.f6s.com/oswaldlabsaccelerator2018"
 	}
 }

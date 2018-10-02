@@ -36,11 +36,9 @@
 		</section>
 		<section>
 			<div class="container">
-				<div class="row">
-					<div class="col-md-8">
-						<h2 v-html="data.deals.title" />
-						<p style="max-width: 500px" class="mt-4 mb-4" v-html="data.deals.intro" />
-					</div>
+				<div class="mb-5">
+					<h2 v-html="data.deals.title" />
+					<p style="max-width: 500px" class="mt-4 mb-4" v-html="data.deals.intro" />
 				</div>
 				<div class="row mt-4">
 					<div v-for="(deal, index) in data.deals.list" :key="`list_${index}`" class="col-md-4 mb-4">
@@ -48,6 +46,32 @@
 						<p v-html="deal.intro" />
 					</div>
 				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 mb-4">
+						<h2 class="mb-4" v-html="data.special.list[0].title" />
+						<p v-html="data.special.list[0].intro" />
+						<cta :context="data.special.list[0]" />
+					</div>
+					<div class="col-md-4 pr-5 pl-2">
+						<img alt="" src="https://undraw.oswaldlabs.com/007bff/world.svg">
+					</div>
+					<div class="col-md-4 mb-4">
+						<h2 class="mb-4" v-html="data.special.list[1].title" />
+						<p v-html="data.special.list[1].intro" />
+						<cta :context="data.special.list[1]" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="text-center d-flex justify-content-center align-items-center bg">
+			<div>
+				<h2 class="display-4">{{data.cta.title}}</h2>
+				<p class="mt-4 mb-4" v-html="data.cta.intro" />
+				<a class="btn btn-primary btn-lg" :href="data.cta.href">{{data.cta.link}}</a>
 			</div>
 		</section>
 	</main>
@@ -71,5 +95,24 @@ export default {
 <style lang="scss" scoped>
 main > header {
 	padding-bottom: 5rem;
+}
+.bg {
+	color: #fff;
+	background: url("https://source.unsplash.com/s2DbUV-yx2A/1600x900") center;
+	background-size: cover;
+	padding: 7.5rem 0;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.5);
+		left: 0; right: 0;
+		top: 0; bottom: 0;
+	}
+	> * {
+		position: relative;
+		z-index: 2;
+		max-width: 500px;
+	}
 }
 </style>
