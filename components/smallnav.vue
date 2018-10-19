@@ -91,20 +91,12 @@ export default {
 							href: "/platform/shravan"
 						},
 						{
-							title: "Operating System",
+							title: "Shravan OS",
 							href: "/platform/shravan/os"
 						},
 						{
-							title: "Augmenta11y",
-							href: "/platform/shravan/augmenta11y"
-						},
-						{
-							title: "Live Subtitles",
-							href: "/platform/shravan/live-subtitles"
-						},
-						{
-							title: "Visib11y",
-							href: "/platform/shravan/visib11y"
+							title: "Shravan Apps",
+							href: "/platform/shravan/apps"
 						}
 					]
 				};

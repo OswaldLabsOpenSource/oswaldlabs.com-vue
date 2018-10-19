@@ -44,6 +44,9 @@ header {
 	padding: 0.75rem 0;
 	.nav-link {
 		padding: 0 1rem !important;
+		&.nuxt-link-active {
+			font-weight: bold;
+		}
 	}
 }
 </style>

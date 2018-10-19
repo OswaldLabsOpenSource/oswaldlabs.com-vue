@@ -1,16 +1,17 @@
 {
 	"header": {
 		"title": "Smartphone for the rest of us.",
-		"intro": "Introducing Shravan, the world’s first end-to-end accessible smartphone OS. With our patent-pending speech and vibration technology, Shravan can be easily used by the visually impaired, the unlettered, senior citizens, and everyone in between.",
+		"intro": "With our speech and vibration technology, Shravan OS can be easily used by the visually impaired, the unlettered, senior citizens, and everyone in between; and our free and open-source Shravan apps empower users on Android and iOS.",
 		"second": "Shravan is Oswald Labs' research project, which takes its form both as an operating system for Android-based smartphones, and a set of inclusive, easy-to-use apps.",
 		"buttons": [
 			{
-				"text": "Preregister &rarr;",
+				"text": "Preregister for Shravan OS &rarr;",
 				"href": "/platform/agastya"
 			}
 		]
 	},
-	"features": {
+	"os": {
+		"title": "Shravan OS",
 		"intro": "Oswald Labs Platform is an extensive suite of products, open-source projects, and developer APIs and SDKs to build tools to empower the next billion users.",
 		"products": [
 			{
@@ -31,6 +32,38 @@
 			{
 				"img": "https://oswaldlabs.com/images/shravan-image-4-59a9b548.png",
 				"title": "Tons of features and updates",
+				"intro": "It has a built-in voice assistant, internet applications like live news and sports scores, music streaming, and search, and emergency features like one-tap ambulance access."
+			}
+		]
+	},
+	"apps": {
+		"title": "Shravan Apps",
+		"intro": "For users using Android and iOS, Oswald Labs also offers free and open-source apps. Shravan apps help the visually impaired understand the world around them, the hearing impaired have conversations, and the dyslexic read more easily.",
+		"buttons": [
+			{
+				"text": "Preregister for Shravan OS &rarr;",
+				"href": "/platform/agastya"
+			}
+		],
+		"products": [
+			{
+				"img": "https://static.oswaldlabs.com/shravan-icons/augmenta11y/generated/android-chrome-144x144.png",
+				"title": "Augmenta11y",
+				"intro": "It works for people who have visual impairment, learning disorders, or are senior citizens. It also works for villagers, illiterate audiences, disabled users, and everyone in between."
+			},
+			{
+				"img": "https://static.oswaldlabs.com/shravan-icons/live-subtitles/generated/android-chrome-144x144.png",
+				"title": "Live Subtitles",
+				"intro": "It uses accessible interface patterns with different modes for correcting system-wide contrast and design settings using a patent-pending combination of vibrations, speech, and touch."
+			},
+			{
+				"img": "https://static.oswaldlabs.com/shravan-icons/visib11y/generated/android-chrome-144x144.png",
+				"title": "Visib11y",
+				"intro": "It has Aadhar integration and works in native languages like Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjab, Assamese, and Maithili."
+			},
+			{
+				"img": "https://static.oswaldlabs.com/shravan-icons/wikibility/generated/android-chrome-144x144.png",
+				"title": "Wikibility",
 				"intro": "It has a built-in voice assistant, internet applications like live news and sports scores, music streaming, and search, and emergency features like one-tap ambulance access."
 			}
 		]
