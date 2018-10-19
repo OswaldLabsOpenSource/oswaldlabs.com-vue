@@ -54,17 +54,17 @@
 			{
 				"img": "https://static.oswaldlabs.com/shravan-icons/live-subtitles/generated/android-chrome-144x144.png",
 				"title": "Live Subtitles",
-				"intro": "It uses accessible interface patterns with different modes for correcting system-wide contrast and design settings using a patent-pending combination of vibrations, speech, and touch."
+				"intro": "Live Subtitles helps people with hearing impairment or deafness have conversations more easily. Just point your phone's camera at someone and see what they're saying on your screen in real-time."
 			},
 			{
 				"img": "https://static.oswaldlabs.com/shravan-icons/visib11y/generated/android-chrome-144x144.png",
 				"title": "Visib11y",
-				"intro": "It has Aadhar integration and works in native languages like Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada, Malayalam, Odia, Punjab, Assamese, and Maithili."
+				"intro": "Visib11y is a daily help app for people with visual impairment or blindness. Instantly recognize objects all around you, read text, find out your location, and navigate to places, all with speech."
 			},
 			{
 				"img": "https://static.oswaldlabs.com/shravan-icons/wikibility/generated/android-chrome-144x144.png",
 				"title": "Wikibility",
-				"intro": "It has a built-in voice assistant, internet applications like live news and sports scores, music streaming, and search, and emergency features like one-tap ambulance access."
+				"intro": "Wikibility is when Wikipedia meets accessibility. Use Agastya's award-winning web accessibility options on Wikipedia, the free encyclopedia, for easy browsing, reading, and referencing."
 			}
 		]
 	}
