@@ -41,15 +41,15 @@
 		"intro": "For users using Android and iOS, Oswald Labs also offers free and open-source apps. Shravan apps help the visually impaired understand the world around them, the hearing impaired have conversations, and the dyslexic read more easily.",
 		"buttons": [
 			{
-				"text": "Preregister for Shravan OS &rarr;",
-				"href": "/platform/agastya"
+				"text": "Download Shravan Apps &rarr;",
+				"href": "/platform/shravan/apps"
 			}
 		],
 		"products": [
 			{
 				"img": "https://static.oswaldlabs.com/shravan-icons/augmenta11y/generated/android-chrome-144x144.png",
 				"title": "Augmenta11y",
-				"intro": "It works for people who have visual impairment, learning disorders, or are senior citizens. It also works for villagers, illiterate audiences, disabled users, and everyone in between."
+				"intro": "Augmenta11y is an Augmented Reality (AR)-based app that helps people with dyslexia easily read in the real world. Just point your phone's camera to any text and see it in dyslexia-friendly mode."
 			},
 			{
 				"img": "https://static.oswaldlabs.com/shravan-icons/live-subtitles/generated/android-chrome-144x144.png",

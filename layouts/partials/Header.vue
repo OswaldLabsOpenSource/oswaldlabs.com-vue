@@ -26,7 +26,7 @@
 							<nuxt-link class="nav-link" to="/contact">Login</nuxt-link>
 						</li>
 						<li class="nav-item">
-							<nuxt-link class="nav-link pr-0" to="/contact">Contact &rarr;</nuxt-link>
+							<nuxt-link class="nav-link pr-0" to="/contact">Get in touch &rarr;</nuxt-link>
 						</li>
 					</ul>
 				</div>

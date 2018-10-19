@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="row pt-5">
-					<div v-for="(feature, index) in data.apps.products" :key="`list_${index}`" class="col-md-6 d-flex mb-4">
+					<div v-for="(feature, index) in data.apps.products" :key="`list_${index}`" class="col-md-6 mb-4">
 						<div class="app-icon"><img alt="" :src="feature.img"></div>
 						<div>
 							<h2 :style="`color: ${feature.color || 'inherit'}`" class="subheading" v-html="feature.title" />
@@ -89,9 +89,14 @@ main > header {
 	margin-bottom: 2rem;
 }
 .app-icon {
-	width: 25%;
+	width: 2.5rem;
+	margin-top: -0.6rem;
 	border-radius: 100%;
-	margin-right: 1.5rem;
+	margin-right: 1rem;
+	float: left;
+	+ div h2 {
+		margin-bottom: 1.5rem;
+	}
 }
 .heading {
 	font-size: 150%;
