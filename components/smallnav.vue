@@ -141,8 +141,11 @@ export default {
 			font-weight: bold;
 		}
 	}
-	&.big a.nav-link {
-		padding: 1.5rem 1rem;
+	&.big {
+		background-color: transparent;
+		a.nav-link {
+			padding: 1.5rem 1rem;
+		}
 	}
 	h1 {
 		color: #414d5b;

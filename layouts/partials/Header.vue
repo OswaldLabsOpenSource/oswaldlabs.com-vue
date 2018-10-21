@@ -42,19 +42,56 @@ header {
 	right: 0;
 	top: 0;
 	padding: 0.75rem 0;
-	transition: padding 0.25s, font-size 0.25s;
+	transition: 0.25s;
+	.navbar-brand {
+		position: relative;
+		z-index: 100;
+	}
 	.nav-link {
 		padding: 0 1rem !important;
+		position: relative;
+		z-index: 1;
 		&.nuxt-link-active {
 			font-weight: bold;
 		}
 	}
 	&.smaller {
 		font-size: 95%;
+		// background-color: #fff;
 		padding: 0;
+		nav {
+			padding: 0;
+		}
+		.nav-link {
+			padding: 0.5rem 1rem !important;
+		}
+		.nav-link.nuxt-link-active {
+			&::before {
+				position: absolute;
+				left: 100%;
+				pointer-events: none;
+				top: 0;
+				content: "";
+				width: 100vw;
+				height: 100%;
+				background-color: #fff;
+				z-index: -1;
+			}
+			&::after {
+				position: absolute;
+				right: 100%;
+				pointer-events: none;
+				top: 0;
+				content: "";
+				width: 100vw;
+				height: 100%;
+				background-color: #fff;
+				z-index: -1;
+			}
+		}
 		.navbar-brand {
 			font-size: 1.05rem;
-			padding: 0.25rem;
+			padding: 0;
 			svg {
 				height: 20px;
 				width: 20px;

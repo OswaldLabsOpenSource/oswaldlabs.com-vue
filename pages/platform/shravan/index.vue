@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<header class="bg-light-1">
-			<smallnav type="shravan" />
+			<smallnav type="shravan" class="big" />
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
