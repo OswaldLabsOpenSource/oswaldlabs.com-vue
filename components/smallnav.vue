@@ -102,6 +102,18 @@ export default {
 				};
 				break;
 		}
+	},
+	mounted() {
+		let header = false;
+		try {
+			header = this.$root.$children[1].$children[0].$el;
+		} catch (error) {}
+		if (header) {
+			header.classList.add("smaller");
+			if (document.querySelector("main > header")) {
+				document.querySelector("main > header").classList.add("smaller");
+			}
+		}
 	}
 };
 </script>
@@ -128,6 +140,9 @@ export default {
 		&.nuxt-link-exact-active {
 			font-weight: bold;
 		}
+	}
+	&.big a.nav-link {
+		padding: 1.5rem 1rem;
 	}
 	h1 {
 		color: #414d5b;

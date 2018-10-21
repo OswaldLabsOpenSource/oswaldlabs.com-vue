@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<Header />
+		<Header ref="oswaldLabsNav" />
 		<nuxt />
 		<Footer />
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/solid.js" integrity="sha384-GJiigN/ef2B3HMj0haY+eMmG4EIIrhWgGJ2Rv0IaWnNdWdbWPr1sRLkGz7xfjOFw" crossorigin="anonymous"></script>
@@ -57,7 +57,11 @@ h2 {
 	transform: translateY(2px);
 }
 main > header {
+	transition: padding 0.25s;
 	padding: 7.5rem 0 2rem 0;
+	&.smaller {
+		padding-top: 5.5rem;
+	}
 }
 main > section {
 	padding: 4rem 0;

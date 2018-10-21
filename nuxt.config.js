@@ -1,4 +1,7 @@
 const pkg = require("./package");
+const PurgeCssPlugin = require("purgecss-webpack-plugin");
+const glob = require("glob-all");
+const path = require("path");
 
 module.exports = {
 	mode: "universal",
@@ -38,7 +41,12 @@ module.exports = {
 	/*
   ** Plugins to load before mounting the App
   */
-	plugins: [],
+	plugins: [
+		// new PurgeCssPlugin({
+		// paths: glob.sync([path.join(__dirname, "./pages/**/*.vue")]),
+		// whitelist: ["html", "body"]
+		// })
+	],
 
 	/*
   ** Nuxt.js modules

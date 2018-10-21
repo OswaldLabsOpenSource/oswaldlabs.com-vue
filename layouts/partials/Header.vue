@@ -42,10 +42,23 @@ header {
 	right: 0;
 	top: 0;
 	padding: 0.75rem 0;
+	transition: padding 0.25s, font-size 0.25s;
 	.nav-link {
 		padding: 0 1rem !important;
 		&.nuxt-link-active {
 			font-weight: bold;
+		}
+	}
+	&.smaller {
+		font-size: 95%;
+		padding: 0;
+		.navbar-brand {
+			font-size: 1.05rem;
+			padding: 0.25rem;
+			svg {
+				height: 20px;
+				width: 20px;
+			}
 		}
 	}
 }
