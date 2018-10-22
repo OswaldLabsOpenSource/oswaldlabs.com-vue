@@ -3,6 +3,7 @@
 		<Header ref="oswaldLabsNav" />
 		<nuxt />
 		<Footer />
+		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/brands.js" integrity="sha384-lc/yFuYW3B0EW9B2QSpod2KeBxq6/ZizGwAW6mRLUe3kKUVlSBfDIVZKwKIz/DBg" crossorigin="anonymous"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/solid.js" integrity="sha384-GJiigN/ef2B3HMj0haY+eMmG4EIIrhWgGJ2Rv0IaWnNdWdbWPr1sRLkGz7xfjOFw" crossorigin="anonymous"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/fontawesome.js" integrity="sha384-2OfHGv4zQZxcNK+oL8TR9pA+ADXtUODqGpIRy1zOgioC4X3+2vbOAp5Qv7uHM4Z8" crossorigin="anonymous"></script>
 	</div>
@@ -56,9 +57,23 @@ h2 {
 	margin-right: 10px;
 	transform: translateY(2px);
 }
+main {
+	overflow: hidden;
+}
 main > header {
 	transition: padding 0.25s;
 	padding: 7.5rem 0 2rem 0;
+	position: relative;
+	&.triangle::after {
+		content: "";
+		position: absolute;
+		left: -10rem; right: -10rem;
+		bottom: -10rem;
+		background-color: #f6f9fc;
+		height: 20rem;
+		transform: rotate(-10deg);
+		z-index: -1;
+	}
 	&.smaller {
 		padding-top: 5.5rem;
 	}

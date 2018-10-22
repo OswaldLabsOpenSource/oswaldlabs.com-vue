@@ -37,6 +37,7 @@
 
 <style lang="scss" scoped>
 header {
+	overflow: hidden;
 	position: absolute;
 	left: 0;
 	right: 0;
