@@ -105,6 +105,35 @@ export default {
 					]
 				};
 				break;
+			case "agastya":
+				this.data = {
+					icon: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Shravan.svg",
+					title: "Agastya",
+					color: "#fc3c53",
+					items: [
+						{
+							title: "Overview",
+							href: "/platform/agastya"
+						},
+						{
+							title: "Features",
+							href: "/platform/agastya/features"
+						},
+						{
+							title: "Pricing",
+							href: "/platform/agastya/pricing"
+						},
+						{
+							title: "Compliancy",
+							href: "/platform/agastya/compliancy"
+						},
+						{
+							title: "EU/GDPR",
+							href: "/platform/agastya/eu"
+						}
+					]
+				};
+				break;
 		}
 	},
 	mounted() {

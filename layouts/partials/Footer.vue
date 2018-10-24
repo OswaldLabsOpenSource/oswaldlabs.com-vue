@@ -1,5 +1,6 @@
 <template>
 	<footer id="colophon">
+		<breadcrumb />
 		<section class="bg-light-1 pt-5 pb-5">
 			<div class="container">
 				<div class="row">
@@ -74,6 +75,16 @@
 		</section>
 	</footer>
 </template>
+
+<script>
+import breadcrumb from "@/components/breadcrumb";
+export default {
+	components: {
+		breadcrumb
+	}
+}
+</script>
+
 
 <style lang="scss" scoped>
 footer {

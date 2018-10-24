@@ -1,5 +1,5 @@
 <template>
-	<div class="bc">
+	<div class="bc" v-if="$route.path.split('/').length > 2">
 		<div class="container">
 			<nav class="nav flex-row">
 				<span class="nav-link">You are here</span>
@@ -17,7 +17,6 @@ export default {
 		}
 	},
 	mounted() {
-		console.log(this.$router);
 		const titleify = text => (text.charAt(0).toUpperCase() + text.slice(1).replace(/-/g, " "));
 		const items = this.$route.path.split("/");
 		for (let i = 0; i < items.length; i++) {

@@ -98,7 +98,6 @@
 				</div>
 			</div>
 		</section>
-		<breadcrumb />
 	</main>
 </template>
 
