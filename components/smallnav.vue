@@ -91,13 +91,17 @@ export default {
 							href: "/platform/shravan"
 						},
 						{
+							title: "Shravan Apps",
+							href: "/platform/shravan/apps"
+						},
+						{
 							title: "Shravan OS",
 							href: "/platform/shravan/os"
 						},
 						{
-							title: "Shravan Apps",
-							href: "/platform/shravan/apps"
-						}
+							title: "Shravan Phone",
+							href: "/platform/shravan/phone"
+						},
 					]
 				};
 				break;

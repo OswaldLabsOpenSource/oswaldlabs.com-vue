@@ -19,8 +19,11 @@
 							<h2 class="subheading">Augmenta11y</h2>
 							<p>Augmented Reality reading app for people with dyslexia</p>
 							<div class="app-icons mt-4">
-								<a href="#" class="btn btn-primary"><i class="fab fa-android"></i>Android</a>
-								<a href="#" class="btn btn-primary ml-2"><i class="fas fa-globe"></i>iPhone</a>
+								<button class="btn btn-dark" disabled>
+									<i class="fab fa-android"></i>
+									<i class="fab fa-apple"></i>
+									Coming soon
+								</button>
 							</div>
 						</div>
 					</div>
@@ -33,8 +36,11 @@
 							<h2 class="subheading">Live Subtitles</h2>
 							<p>Conversational captionion app for people with deafness</p>
 							<div class="app-icons mt-4">
-								<a href="#" class="btn btn-primary"><i class="fab fa-android"></i>Android</a>
-								<a href="#" class="btn btn-primary ml-2"><i class="fas fa-globe"></i>iPhone</a>
+								<button class="btn btn-dark" disabled>
+									<i class="fab fa-android"></i>
+									<i class="fab fa-apple"></i>
+									Coming soon
+								</button>
 							</div>
 						</div>
 					</div>
@@ -47,8 +53,11 @@
 							<h2 class="subheading">Visib11y</h2>
 							<p>Object recognition and navigation app for people with blidness</p>
 							<div class="app-icons mt-4">
-								<a href="#" class="btn btn-primary"><i class="fab fa-android"></i>Android</a>
-								<a href="#" class="btn btn-primary ml-2"><i class="fas fa-globe"></i>iPhone</a>
+								<button class="btn btn-dark" disabled>
+									<i class="fab fa-android"></i>
+									<i class="fab fa-apple"></i>
+									Coming soon
+								</button>
 							</div>
 						</div>
 					</div>
@@ -61,8 +70,11 @@
 							<h2 class="subheading">Wikibility</h2>
 							<p>Wikipedia referencing app for people with disabilities</p>
 							<div class="app-icons mt-4">
-								<a href="#" class="btn btn-primary"><i class="fab fa-android"></i>Android</a>
-								<a href="#" class="btn btn-primary ml-2"><i class="fas fa-globe"></i>iPhone</a>
+								<button class="btn btn-dark" disabled>
+									<i class="fab fa-android"></i>
+									<i class="fab fa-apple"></i>
+									Coming soon
+								</button>
 							</div>
 						</div>
 					</div>
@@ -80,6 +92,9 @@
 							href: `/platform`
 						}]}" />
 					</div>
+				</div>
+				<div class="disclaimer small mt-5 text-muted">
+					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law.</p>
 				</div>
 			</div>
 		</section>

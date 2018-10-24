@@ -26,6 +26,9 @@ body {
 	font-size: 105%;
 	color: #4b5f79;
 }
+p:last-child {
+	margin-bottom: 0;
+}
 nav {
 	font-size: 95%;
 }
