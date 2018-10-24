@@ -1,7 +1,8 @@
 {
 	"header": {
 		"title": "Web accessibility made simple.",
-		"intro": "Agastya by Oswald Labs is the first end-to-end web accessibility tool. By adding just one line of JavaScript code, you can make your website accessible to a much wider audience. You can customize the widget, view usage anayltics, and more.",
+		"intro": "Agastya by Oswald Labs is the first end-to-end web accessibility tool. By adding just one line of JavaScript code, you can make your website accessible to a much wider audience. You can customize the widget, view usage analytics, and more.",
+		"second": "All of Oswald Labs' products are built on the scalable and extensible Oswald Labs Platform. [Get in touch](/contact) with us to build on top of Oswald Labs Platform, or explore our other products below.",
 		"buttons": [
 			{
 				"text": "Visit Agastya &rarr;",
@@ -14,8 +15,8 @@
 		"intro": "Oswald Labs Platform is an extensive suite of products, open-source projects, and developer APIs and SDKs to build tools to empower the next billion users.",
 		"buttons": [
 			{
-				"text": "Get an API key &rarr;",
-				"href": "/platform/agastya"
+				"text": "Explore Shravan apps &rarr;",
+				"href": "/platform/shravan/apps"
 			}
 		],
 		"products": [
@@ -49,18 +50,18 @@
 		"list": [
 			{
 				"icon": "cube",
-				"title": "Augmenta11y",
-				"intro": "AR app for people with learning disorders like dyslexia. Point your smartphone camera to signage, books, or anything else with text, to read it in dyslexia-friendly mode."
+				"title": "Learning disorders",
+				"intro": "Augmenta11y is an AR app for people with learning disorders like dyslexia. Point your smartphone camera to signage, books, or anything else with text, to read it in dyslexia-friendly mode to remember it."
 			},
 			{
 				"icon": "deaf",
-				"title": "Live Subtitles",
-				"intro": "Automatic captioning for conversations (imagine subtitles in movies, but in real life, while listening to someone speak) using deep learning-based speech recognition."
+				"title": "Hearing impairment",
+				"intro": "Live Subtitles is an app for automatic conversations captioning (imagine subtitles in movies, but in real life, while listening to someone speak) using deep learning-based speech recognition."
 			},
 			{
 				"icon": "eye-slash",
-				"title": "Visib11y",
-				"intro": "Android and iPhone app for users with visual impairment or blindness that helps them explore and navigate to places, read text using the camera, and more."
+				"title": "Visual impairment",
+				"intro": "Visib11y is a smartphone app for users with visual impairment or blindness that helps them explore and navigate to places, read text and identify projects and environments using their camera, and more."
 			}
 		]
 	}

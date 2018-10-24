@@ -17,7 +17,10 @@ export default {
 		}
 	},
 	mounted() {
-		const titleify = text => (text.charAt(0).toUpperCase() + text.slice(1).replace(/-/g, " "));
+		const titleify = text => {
+			if (text === "os") return "OS";
+			return text.charAt(0).toUpperCase() + text.slice(1).replace(/-/g, " ");
+		};
 		const items = this.$route.path.split("/");
 		for (let i = 0; i < items.length; i++) {
 			items[i] = {

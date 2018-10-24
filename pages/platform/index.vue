@@ -43,7 +43,7 @@
 				<div class="row mb-5">
 					<div class="col-md-6 d-flex align-items-center">
 						<div>
-							<p style="max-width: 500px" class="mt-4 mb-4">{{data.header.intro}}</p>
+							<p style="max-width: 500px" class="mt-4 mb-4" v-html="data.header.second" />
 						</div>
 					</div>
 				</div>

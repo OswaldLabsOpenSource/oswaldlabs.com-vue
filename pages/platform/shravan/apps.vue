@@ -1,7 +1,7 @@
 <template>
 	<main>
 		<header class="bg-light-1 triangle">
-			<smallnav type="shravan" class="big mb-3" />
+			<smallnav type="shravan" class="big mb-5" />
 			<div class="text-center">
 				<h1 class="mb-3">Shravan apps work for everyone.</h1>
 				<p class="mb-5 pb-5 ml-auto mr-auto" style="max-width: 500px">The Shravan app suite is a set of accessible, easy-to-use smartphones apps available for free for devices running Android or iOS. They are built on the extensible Oswald Labs Platform.</p>
@@ -94,7 +94,7 @@
 					</div>
 				</div>
 				<div class="disclaimer small mt-5 text-muted">
-					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law.</p>
+					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law. Some features might not work in all smartphones or in all locations. Requires a connection to the internet.</p>
 				</div>
 			</div>
 		</section>
