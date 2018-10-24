@@ -162,7 +162,7 @@ export default {
 		try {
 			header = this.$root.$children[1].$children[0].$el;
 		} catch (error) {}
-		if (header) {
+		if (header && ["agastya", "shravan", "valmiki"].includes(this.type)) {
 			header.classList.add("smaller");
 			if (document.querySelector("main > header")) {
 				document.querySelector("main > header").classList.add("smaller");
@@ -199,23 +199,14 @@ export default {
 		background-color: transparent;
 		a.nav-link {
 			padding: 1.5rem 1rem;
+			&:hover {
+				opacity: 0.5;
+			}
 		}
 	}
 	h1 {
 		color: #414d5b;
 		font-size: inherit;
-	}
-	&.shravan {
-		background-color: #fff;
-		// h1 {
-		// 	color: #fff;
-		// }
-		// a.nav-link {
-		// 	color: rgba(255, 255, 255, 0.85);
-		// 	&.nuxt-link-exact-active {
-		// 		color: #fff;
-		// 	}
-		// }
 	}
 }
 </style>

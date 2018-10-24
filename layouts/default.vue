@@ -13,6 +13,21 @@
 import Header from "./partials/Header";
 import Footer from "./partials/Footer";
 export default {
+	mounted() {
+		this.$router.afterHooks.push(() => {
+			setTimeout(() => {
+				let header = false;
+				try {
+					header = this.$root.$children[1].$children[0].$el;
+				} catch (error) {}
+				if (header) {
+					if (!document.querySelectorAll(".smallnav__primary").length) {
+						header.classList.remove("smaller");
+					}
+				}
+			}, 10);
+		});
+	},
 	components: {
 		Header,
 		Footer
