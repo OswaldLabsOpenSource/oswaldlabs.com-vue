@@ -3,7 +3,7 @@
 		<div class="container">
 			<nav class="nav flex-row">
 				<span class="nav-link">You are here</span>
-				<router-link v-for="(item, index) in items" :key="index" :to="item.href" class="nav-link">{{item.title}}</router-link>
+				<nuxt-link v-for="(item, index) in items" :key="index" :to="item.href" class="nav-link">{{item.title}}</nuxt-link>
 			</nav>
 		</div>
 	</div>

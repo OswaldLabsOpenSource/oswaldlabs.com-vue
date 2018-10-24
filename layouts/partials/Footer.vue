@@ -6,7 +6,10 @@
 				<div class="row">
 					<div class="col-md-3 d-flex justify-content-between flex-column text-center text-md-left">
 						<div>
-							<a class="navbar-brand" href="/"> <svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="#007bff" fill-rule="evenodd"><path d="M58 116C25.967 116 0 90.033 0 58S25.967 0 58 0s58 25.967 58 58-25.967 58-58 58zm.5-11c26.234 0 47.5-21.266 47.5-47.5S84.734 10 58.5 10 11 31.266 11 57.5 32.266 105 58.5 105z"></path><circle cx="58.5" cy="57.5" r="35.5"></circle></g></svg> <span>Oswald Labs</span> </a>
+							<nuxt-link class="navbar-brand" to="/">
+								<svg viewBox="0 0 116 116" xmlns="http://www.w3.org/2000/svg"><g fill="#007bff" fill-rule="evenodd"><path d="M58 116C25.967 116 0 90.033 0 58S25.967 0 58 0s58 25.967 58 58-25.967 58-58 58zm.5-11c26.234 0 47.5-21.266 47.5-47.5S84.734 10 58.5 10 11 31.266 11 57.5 32.266 105 58.5 105z"></path><circle cx="58.5" cy="57.5" r="35.5"></circle></g></svg>
+								<span>Oswald Labs</span>
+							</nuxt-link>
 						</div>
 						<div>&copy; 2018</div>
 					</div>
@@ -15,49 +18,49 @@
 							<div class="col-6 col-md">
 								<h2 class="h5">Platform</h2>
 								<nav class="nav flex-column">
-									<a href="#">Web accessibility</a>
-									<a href="#">Smartphone OS</a>
-									<a href="#">Browser extension</a>
-									<a href="#">Platform apps</a>
-									<a href="#">GDPR &amp; privacy</a>
+									<nuxt-link to="/">Web accessibility</nuxt-link>
+									<nuxt-link to="/">Android &amp; iOS apps</nuxt-link>
+									<nuxt-link to="/">Smartphone OS</nuxt-link>
+									<nuxt-link to="/">Browser extension</nuxt-link>
+									<nuxt-link to="/">GDPR &amp; privacy</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
 								<h2 class="h5">Accelerator</h2>
 								<nav class="nav flex-column">
-									<a href="#">Program home</a>
-									<a href="#">Portfolio startups</a>
-									<a href="#">Upcoming events</a>
-									<a href="#">Partnerships</a>
+									<nuxt-link to="/">Program home</nuxt-link>
+									<nuxt-link to="/">Portfolio startups</nuxt-link>
+									<nuxt-link to="/">Upcoming events</nuxt-link>
+									<nuxt-link to="/">Partnerships</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
 								<h2 class="h5">Developers</h2>
 								<nav class="nav flex-column">
-									<a href="#">Documentation</a>
-									<a href="#">API reference</a>
-									<a href="#">Agastya apps</a>
-									<a href="#"><span class="text-success">●</span> Status</a>
+									<nuxt-link to="/">Documentation</nuxt-link>
+									<nuxt-link to="/">API reference</nuxt-link>
+									<nuxt-link to="/">Agastya apps</nuxt-link>
+									<nuxt-link to="/"><span class="text-success">●</span> Status</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
 								<h2 class="h5">Company</h2>
 								<nav class="nav flex-column">
-									<a href="#">About us</a>
+									<nuxt-link to="/">About us</nuxt-link>
 									<nuxt-link to="/team">Leadership</nuxt-link>
-									<a href="#">Our values</a>
-									<a href="#">Work with us</a>
-									<a href="#">Blog</a>
+									<nuxt-link to="/">Our values</nuxt-link>
+									<nuxt-link to="/">Work with us</nuxt-link>
+									<nuxt-link to="/">Blog</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
 								<h2 class="h5">Resources</h2>
 								<nav class="nav flex-column">
-									<a href="#">Contact us</a>
-									<a href="#">Press</a>
-									<a href="#">Privacy &amp; terms</a>
-									<a href="#">GDPR Tools</a>
-									<a href="#">Payments</a>
+									<nuxt-link to="/">Contact us</nuxt-link>
+									<nuxt-link to="/">Press</nuxt-link>
+									<nuxt-link to="/">Privacy &amp; terms</nuxt-link>
+									<nuxt-link to="/">GDPR tools</nuxt-link>
+									<nuxt-link to="/">Payments</nuxt-link>
 								</nav>
 							</div>
 						</div>

@@ -107,9 +107,9 @@ export default {
 				break;
 			case "agastya":
 				this.data = {
-					icon: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Shravan.svg",
+					icon: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Agastya.svg",
 					title: "Agastya",
-					color: "#fc3c53",
+					color: "#fe730f",
 					items: [
 						{
 							title: "Overview",
@@ -130,6 +130,27 @@ export default {
 						{
 							title: "EU/GDPR",
 							href: "/platform/agastya/eu"
+						}
+					]
+				};
+				break;
+			case "valmiki":
+				this.data = {
+					icon: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Valmiki.svg",
+					title: "Valmiki",
+					color: "#25852a",
+					items: [
+						{
+							title: "Overview",
+							href: "/platform/valmiki"
+						},
+						{
+							title: "Features",
+							href: "/platform/valmiki/features"
+						},
+						{
+							title: "Pricing",
+							href: "/platform/valmiki/eu"
 						}
 					]
 				};
