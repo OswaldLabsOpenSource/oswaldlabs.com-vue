@@ -12,68 +12,80 @@
 				<div class="row">
 					<div class="col-md">
 						<div class="card card-phone">
-							<div class="screen">Screen</div>
+							<div class="screen">
+								<img alt="Screenshot of the Augmenta11y app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540472246/oswald-labs/shravan/visib11y.png">
+							</div>
 						</div>
 						<div class="text-center">
 							<img class="icon" src="https://static.oswaldlabs.com/shravan-icons/augmenta11y/generated/android-chrome-144x144.png">
 							<h2 class="subheading">Augmenta11y</h2>
 							<p>Augmented Reality reading app for people with dyslexia</p>
-							<div class="app-icons mt-4">
-								<button class="btn btn-dark" disabled>
+							<div class="app-icons mt-4 d-none">
+								<button class="btn btn-dark">
 									<i class="fab fa-android"></i>
-									<i class="fab fa-apple"></i>
-									Coming soon
+									Android
 								</button>
 							</div>
 						</div>
 					</div>
 					<div class="col-md">
 						<div class="card card-phone">
-							<div class="screen">Screen</div>
+							<div class="screen">
+								<img alt="Screenshot of the Subtitles app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540546287/oswald-labs/shravan/live-subtitles.png">
+							</div>
 						</div>
 						<div class="text-center">
 							<img class="icon" src="https://static.oswaldlabs.com/shravan-icons/live-subtitles/generated/android-chrome-144x144.png">
 							<h2 class="subheading">Live Subtitles</h2>
 							<p>Conversational captionion app for people with deafness</p>
-							<div class="app-icons mt-4">
-								<button class="btn btn-dark" disabled>
+							<div class="app-icons mt-4 d-none">
+								<button class="btn btn-dark">
 									<i class="fab fa-android"></i>
-									<i class="fab fa-apple"></i>
-									Coming soon
+									Android
 								</button>
 							</div>
 						</div>
 					</div>
 					<div class="col-md">
 						<div class="card card-phone">
-							<div class="screen">Screen</div>
+							<div class="screen">
+								<img alt="Screenshot of the </ app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540472246/oswald-labs/shravan/visib11y.png">
+							</div>
 						</div>
 						<div class="text-center">
 							<img class="icon" src="https://static.oswaldlabs.com/shravan-icons/visib11y/generated/android-chrome-144x144.png">
 							<h2 class="subheading">Visib11y</h2>
-							<p>Object recognition and navigation app for people with blidness</p>
-							<div class="app-icons mt-4">
-								<button class="btn btn-dark" disabled>
+							<p>Object recognition and navigation app for people with blindness</p>
+							<div class="app-icons mt-4 d-none">
+								<button class="btn btn-dark">
 									<i class="fab fa-android"></i>
+									Android
+								</button>
+								<button class="btn btn-dark">
 									<i class="fab fa-apple"></i>
-									Coming soon
+									iPhone
 								</button>
 							</div>
 						</div>
 					</div>
 					<div class="col-md">
 						<div class="card card-phone">
-							<div class="screen">Screen</div>
+							<div class="screen">
+								<img alt="Screenshot of the Wikibility app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540472246/oswald-labs/shravan/visib11y.png">
+							</div>
 						</div>
 						<div class="text-center">
 							<img class="icon" src="https://static.oswaldlabs.com/shravan-icons/wikibility/generated/android-chrome-144x144.png">
 							<h2 class="subheading">Wikibility</h2>
 							<p>Wikipedia referencing app for people with disabilities</p>
-							<div class="app-icons mt-4">
-								<button class="btn btn-dark" disabled>
+							<div class="app-icons mt-4 d-none">
+								<button class="btn btn-dark">
 									<i class="fab fa-android"></i>
+									Android
+								</button>
+								<button class="btn btn-dark">
 									<i class="fab fa-apple"></i>
-									Coming soon
+									iPhone
 								</button>
 							</div>
 						</div>
@@ -115,11 +127,15 @@ export default {
 </script>
 
 <style lang="scss">
+header, header::after {
+	background-color: #fff6f6 !important;
+	color: rgb(86, 49, 53);
+}
 .card-phone {
 	border-radius: 2rem;
 	text-align: center;
 	margin-top: -12rem;
-	height: 32rem;
+	padding-bottom: 1rem;
 	position: relative;
 	border: 1px solid #ddd;
 	&::before {
@@ -146,7 +162,6 @@ export default {
 		background-color: whitesmoke;
 		border: 1px solid #ddd;
 		margin: 3rem 0.5rem;
-		height: 25rem;
 		position: relative;
 		&::after {
 			content: "";

@@ -3,8 +3,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 d-flex align-items-center">
-					<img v-if="data.icon" alt="" :src="data.icon">
-					<h1 class="m-0 font-weight-bold p-2 pl-3 p-md-0" :style="`color: ${data.color}`">{{data.title}}</h1>
+					<router-link class="d-flex align-items-center logo" :to="data.items[0].href">
+						<img v-if="data.icon" alt="" :src="data.icon">
+						<h1 class="m-0 font-weight-bold p-2 pl-3 p-md-0" :style="`color: ${data.color}`">{{data.title}}</h1>
+					</router-link>
 				</div>
 				<div class="col-md">
 					<nav class="nav justify-content-end">
@@ -206,7 +208,11 @@ export default {
 	}
 	h1 {
 		color: #414d5b;
+		display: inline;
 		font-size: inherit;
+	}
+	.logo:hover {
+		text-decoration: none;
 	}
 }
 </style>

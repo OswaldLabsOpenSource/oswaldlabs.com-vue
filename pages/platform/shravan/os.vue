@@ -51,6 +51,26 @@
 		<section>
 			<div class="container">
 				<div class="row">
+					<div class="col-md pr-5">
+						<h2>Powered by Android&reg;</h2>
+						<p class="mt-4">Shravan OS is an Android ROM, which means it comes with the security, reliability, and compatibility of the world's most popular OS, Android. All Android apps work out-of-the-box.</p>
+						<div>
+							<button class="btn btn-outline-primary">Technical introduction &rarr;</button>
+						</div>
+					</div>
+					<div class="col-md pl-5">
+						<h2>Inclusive by Oswald Labs Platform</h2>
+						<p class="mt-4">Shravan OS is built on Oswald Labs Platform, an extensive suite of products, open-source projects, and developer APIs and SDKs to build tools to empower the next billion users.</p>
+						<div>
+							<button class="btn btn-outline-primary">Built on Oswald Labs Platform &rarr;</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row">
 					<div class="col-md-8">
 						<h2>Built on Oswald Labs Platform</h2>
 						<p class="mt-4 mb-4">The Shravan app suite is built on Oswald Labs Platform, an extensive suite of products, open-source projects, and developer APIs and SDKs to build tools to empower the next billion users.</p>
@@ -61,7 +81,7 @@
 					</div>
 				</div>
 				<div class="disclaimer small mt-5 text-muted">
-					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law. Some features might not work in all smartphones or in all locations. Requires a connection to the internet. BHIM UPI app included in Shravan is a project by the Government of India. Aadhaar connection uses the Aadhaar Bridge API.</p>
+					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law. Some features might not work in all smartphones or in all locations. Requires a connection to the internet. Android and the Android logo are registered trademarks of Google LLC.</p>
 				</div>
 			</div>
 		</section>
@@ -85,7 +105,7 @@ export default {
 .fixedbox {
 	position: absolute;
 	background-color: gray;
-	left: 4rem;
+	left: 3rem;
 	height: calc(100% + 8rem);
 	width: 50vw;
 	margin: -4rem 0;
