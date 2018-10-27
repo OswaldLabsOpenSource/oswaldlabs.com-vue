@@ -16,22 +16,24 @@
 					<div class="col-md-9">
 						<div class="row">
 							<div class="col-6 col-md">
-								<h2 class="h5">Platform</h2>
+								<h2 class="h5">
+									<nuxt-link to="/platform">Platform</nuxt-link>
+								</h2>
 								<nav class="nav flex-column">
-									<nuxt-link to="/">Web accessibility</nuxt-link>
-									<nuxt-link to="/">Android &amp; iOS apps</nuxt-link>
-									<nuxt-link to="/">Smartphone OS</nuxt-link>
-									<nuxt-link to="/">Browser extension</nuxt-link>
-									<nuxt-link to="/">GDPR &amp; privacy</nuxt-link>
+									<nuxt-link to="/platform/agastya">Web accessibility</nuxt-link>
+									<nuxt-link to="/platform/shravan/apps">Android &amp; iOS apps</nuxt-link>
+									<nuxt-link to="/platform/shravan">Smartphone OS</nuxt-link>
+									<nuxt-link to="/platform/valmiki">Browser extension</nuxt-link>
+									<nuxt-link to="/platform/agastya/privacy">GDPR &amp; privacy</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
 								<h2 class="h5">Accelerator</h2>
 								<nav class="nav flex-column">
-									<nuxt-link to="/">Program home</nuxt-link>
-									<nuxt-link to="/">Portfolio startups</nuxt-link>
-									<nuxt-link to="/">Upcoming events</nuxt-link>
-									<nuxt-link to="/">Partnerships</nuxt-link>
+									<nuxt-link to="/accelerator">Program home</nuxt-link>
+									<nuxt-link to="/accelerator/startups">Portfolio startups</nuxt-link>
+									<nuxt-link to="/accelerator/events">Upcoming events</nuxt-link>
+									<nuxt-link to="/accelerator/partners">Partnerships</nuxt-link>
 								</nav>
 							</div>
 							<div class="col-6 col-md">
@@ -46,9 +48,9 @@
 							<div class="col-6 col-md">
 								<h2 class="h5">Company</h2>
 								<nav class="nav flex-column">
-									<nuxt-link to="/">About us</nuxt-link>
+									<nuxt-link to="/about">About us</nuxt-link>
 									<nuxt-link to="/team">Leadership</nuxt-link>
-									<nuxt-link to="/">Our values</nuxt-link>
+									<nuxt-link to="/values/access">Our values</nuxt-link>
 									<nuxt-link to="/">Work with us</nuxt-link>
 									<nuxt-link to="/">Blog</nuxt-link>
 								</nav>
@@ -56,11 +58,11 @@
 							<div class="col-6 col-md">
 								<h2 class="h5">Resources</h2>
 								<nav class="nav flex-column">
-									<nuxt-link to="/">Contact us</nuxt-link>
-									<nuxt-link to="/">Press</nuxt-link>
-									<nuxt-link to="/">Privacy &amp; terms</nuxt-link>
-									<nuxt-link to="/">GDPR tools</nuxt-link>
-									<nuxt-link to="/">Payments</nuxt-link>
+									<nuxt-link to="/contact">Contact us</nuxt-link>
+									<nuxt-link to="/press">Press</nuxt-link>
+									<nuxt-link to="/policies/privacy">Privacy &amp; terms</nuxt-link>
+									<nuxt-link to="/gdpr/delete">GDPR tools</nuxt-link>
+									<nuxt-link to="/payments">Payments</nuxt-link>
 								</nav>
 							</div>
 						</div>

@@ -13,8 +13,8 @@
 import Header from "./partials/Header";
 import Footer from "./partials/Footer";
 export default {
-	mounted() {
-		this.$router.afterHooks.push(() => {
+	watch: {
+		$route() {
 			setTimeout(() => {
 				let header = false;
 				try {
@@ -26,7 +26,7 @@ export default {
 					}
 				}
 			}, 10);
-		});
+		}
 	},
 	components: {
 		Header,

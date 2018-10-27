@@ -13,7 +13,7 @@
 					<div class="col-md">
 						<div class="card card-phone">
 							<div class="screen">
-								<img alt="Screenshot of the Augmenta11y app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540472246/oswald-labs/shravan/visib11y.png">
+								<img alt="Screenshot of the Augmenta11y app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540547239/oswald-labs/shravan/augmenta11y.png">
 							</div>
 						</div>
 						<div class="text-center">
@@ -71,7 +71,7 @@
 					<div class="col-md">
 						<div class="card card-phone">
 							<div class="screen">
-								<img alt="Screenshot of the Wikibility app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540472246/oswald-labs/shravan/visib11y.png">
+								<img alt="Screenshot of the Wikibility app" src="https://res.cloudinary.com/anand-chowdhary/image/upload/v1540547236/oswald-labs/shravan/wikibility.png">
 							</div>
 						</div>
 						<div class="text-center">
@@ -106,7 +106,7 @@
 					</div>
 				</div>
 				<div class="disclaimer small mt-5 text-muted">
-					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law. Some features might not work in all smartphones or in all locations. Requires a connection to the internet.</p>
+					<p>Shravan is a trademark of OswaldAble Technology Private Limited, doing business as Oswald Labs. The Shravan brand name, logo, and identity is protected by copyright under Indian and international law. Some features might not work on all smartphones or in all locations. Requires a connection to the internet.</p>
 				</div>
 			</div>
 		</section>
@@ -126,7 +126,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 header, header::after {
 	background-color: #fff6f6 !important;
 	color: rgb(86, 49, 53);
