@@ -75,6 +75,7 @@ export default {
 <style lang="scss" scoped>
 main > header {
 	padding-bottom: 5rem;
+	background-color: #fafff3;
 }
 .bg {
 	color: #fff;

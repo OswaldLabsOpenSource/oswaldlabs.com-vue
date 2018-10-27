@@ -25,7 +25,7 @@ export default {
 						header.classList.remove("smaller");
 					}
 				}
-			}, 10);
+			}, 110);
 		}
 	},
 	components: {
@@ -111,5 +111,11 @@ img {
 }
 :focus:not(:focus-visible) {
 	// outline: none;
+}
+.page-enter-active, .page-leave-active {
+	transition: opacity 0.1s;
+}
+.page-leave-to, .page-enter {
+	opacity: 0;
 }
 </style>

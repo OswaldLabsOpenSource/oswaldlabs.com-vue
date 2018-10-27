@@ -83,7 +83,8 @@ export default {
 <style lang="scss" scoped>
 main > header {
 	padding-bottom: 5rem;
-	background-color: #fff6f6 !important;
+	color: rgb(86, 49, 53);
+	background-color: #fffafa !important;
 }
 .icon {
 	width: 45px;

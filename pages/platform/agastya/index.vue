@@ -1,6 +1,6 @@
 <template>
 	<main>
-		<header class="bg-light-1">
+		<header>
 			<smallnav type="agastya" class="big" />
 			<div class="container">
 				<div class="row">
@@ -48,6 +48,8 @@ export default {
 <style lang="scss" scoped>
 main > header {
 	padding-bottom: 5rem;
+	background-color: #fffef3;
+	color: #805824;
 }
 .icon {
 	width: 45px;

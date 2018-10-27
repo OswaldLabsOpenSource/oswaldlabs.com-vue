@@ -128,7 +128,7 @@ export default {
 
 <style lang="scss" scoped>
 header, header::after {
-	background-color: #fff6f6 !important;
+	background-color: #fffafa !important;
 	color: rgb(86, 49, 53);
 }
 .card-phone {
