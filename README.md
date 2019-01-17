@@ -1,6 +1,6 @@
 # oswaldlabs.com-vue
 
-> My prime Nuxt.js project
+⚠️ **Archive Note:** This repository contains an incomplete concept and has been archived. Please visit [our website](https://oswaldlabs.com) to see our ongoing projects.
 
 ## Build Setup
 
